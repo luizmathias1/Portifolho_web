@@ -1,0 +1,193 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #2C3E50;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #2C3E50;
+}
+
+body{
+    background-color:  #F9F9F9;
+    height: 100%;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* cabeçalho */
+
+header{
+    padding: 40px;
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-around;
+
+}  
+
+header a{
+    color: #8f8e8e;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #BDC3C7;
+    transform: scale(1.4);
+
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: flex;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn_contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:  #2ECC71;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn_contato button:hover{
+    box-shadow: 0px 0px 10px #22a10cb0;
+    transform: scale(1.05);
+}
+
+
+/* MINHAS HABILIDADES */
+
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    gap: 70px;
+}
+
+.habilidades .habilidades_box{
+    color: #4A4A4A;
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.habilidades .habilidades_box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #2ECC71;
+}
+
+.habilidades .habilidades_box i{
+    font-size: 50px;
+    color: #3498DB;
+}
+
+.habilidades .habilidades_box h3{
+    font-size: 30px;
+    margin: 15px;
+}
+
+/* SOBRE MIM */
+
+section.sobre{
+    padding: 60px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt_sobre{
+    color: #4A4A4A;
+}
+
+.sobre .txt_sobre h2{
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.sobre .txt_sobre h2 span{
+    color: #2C3E50;
+    display: block;
+}
+
+.sobre .txt_sobre p{
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+.btn_social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    background-color: #2ECC71;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+.sobre .txt_sobre .btn_social button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #bdc3c760;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 40px 10px #ffffff21;
+}
+
+footer .flex{
+    flex-direction: row-reverse;
+}
+
+footer .line_footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-bottom: 1.5px solid #BDC3C7;
+}
+
+footer .line_footer p i{
+    color: #BDC3C7;
+    font-size: 20px;
+}
+
+footer .line_footer p a{
+    color: #4A4A4A;
+}

@@ -21,8 +21,12 @@ h2.titulo span{
 }
 
 body{
-    background-color:  #F9F9F9;
+    padding-top: 100px;
     height: 100%;
+}
+
+main {
+    padding-top: 100px;
 }
 
 .interface{
@@ -32,7 +36,13 @@ body{
 
 /* cabeçalho */
 
+
+
 header{
+    position: fixed; /* Fixa o header no topo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    top: 0; /* Alinha o header no topo da página */
+    width: 100%; /* O header ocupa toda a largura da página */
     padding: 40px;
 }
 
@@ -85,6 +95,7 @@ header nav ul li{
 /* MINHAS HABILIDADES */
 
 section.habilidades{
+    margin-top: 100px;
     padding: 40px 4%;
 }
 
@@ -106,13 +117,19 @@ section.habilidades .flex{
 }
 
 .habilidades .habilidades_box i{
+    display: flex;
+    justify-content:flex-start;
     font-size: 50px;
     color: #3498DB;
 }
 
 .habilidades .habilidades_box h3{
     font-size: 30px;
-    margin: 15px;
+    margin: 0px;
+}
+
+main a{
+    text-decoration: none;
 }
 
 /* SOBRE MIM */
@@ -140,6 +157,11 @@ section.sobre .flex{
 .sobre .txt_sobre h2 span{
     color: #2C3E50;
     display: block;
+}
+
+.sobre .txt_sobre p span{
+    font-size: 20px;
+    color: #072644;
 }
 
 .sobre .txt_sobre p{

@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="../index.js"></script>
 </head>
 
-<body>
+<body class="bg-light">
 
     <header>
         <div class="interface">
 
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a onclick="IrInicio()">Inicio</a></li>
+                    <li><a onclick="IrProjetos()">Projetos</a></li>
+                    <li><a onclick="IrContato()">Contato</a></li>
                 </ul>
             </nav><!--opções nav-bar-->
 
@@ -29,7 +30,7 @@
 
     </header>
 
-    <main>
+    <main id="Inicio">
 
 
         <section class="sobre">
@@ -40,7 +41,7 @@
                     <div class="txt_sobre">
                         <h2>Quem é <span>Luiz Mathias</span></h2>
                         <p>Sou um estudante de Ciências da Computação do 4º Periodo da PUCPR Curitiba.</p>
-                        <p>Estou buscando atuar na área de desenvolvimento web. Não possuo experiência profissional, apenas com projetos pessoais e projetos desenvolvidos na faculdade.</p>
+                        <p>Estou em busca de um novo emprego como <span>desenvolvedor FrontEnd, BackEnd ou FullStack.</span> Tenho conhecimento de Spring Boot e Flask como backend e como front html, css e javascript. </p>
                         <div class="btn_social">
                             <a href="https://linkedin.com/in/luiz-mathias-rivabem-filho-17359129a"><button><i class="bi bi-linkedin"></i></button></a>
                             <a href="https://github.com/luizmathias1"><button><i class="bi bi-github"></i></button></a>
@@ -48,34 +49,40 @@
                     </div>
                 </div>
             </div><!--interface--
-        </section><!--sobre-->
+        </section></--sobre-->
         </section>
 
-        <section class="habilidades">
+        <div id="Projetos"></div>
+        <section  class="habilidades">
 
             <div class="interface">
-                <h2 class="titulo">Minhas <span>Habilidades</span></h2>
+                <h2 class="titulo">Meus <span>Projetos</span></h2>
 
                 <div class="flex">
+                    
+                    <a href="https://github.com/luizmathias1/Sistema-de-seguran-a.git">
+                        <div class="habilidades_box">
+                            <i class="bi bi-code-slash"></i>
+                            <h3>Nicolabs</h3>
+                            <p>Desenvolvimento de um Projeto Fullstack com Sistema Embarcado</p>
+                        </div><!--habilidades-->
+                    </a>
 
-                    <div class="habilidades_box">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>Website</h3>
-                        <p>Já fiz projetos com desenvolvimento de sites, participei como fullstack</p>
-                    </div><!--habilidades-->
-
-                    <div class="habilidades_box">
-                        <i class="bi bi-bag-check"></i>
-                        <h3>Lojas Online</h3>
-                        <p>Construi um site de uma loja de vendas de computadores</p>
-                    </div><!--habilidades-->
-
-                    <div class="habilidades_box">
-                        <i class="bi bi-database"></i>
-                        <h3>Banco de Dados</h3>
-                        <p>Participei da criação de um banco de dados do inicio ao fim, sem aplicação web</p>
-                    </div><!--habilidades-->
-
+                    <a href="https://github.com/luizmathias1/Trabalhos-de-POO-em-Java.git">
+                        <div class="habilidades_box">
+                            <i class="bi bi-person-lines-fill"></i>
+                            <h3>Lista de Contato</h3>
+                            <p>Lista de contatos feita em java com interface gráfica feita em swing</p>
+                        </div><!--habilidades-->
+                    </a>
+                    
+                    <a href="https://github.com/luizmathias1/Planejador-de-viagens.git">
+                        <div class="habilidades_box">
+                            <i class="bi bi-code-slash"></i>
+                            <h3>Agendador de Viagem</h3>
+                            <p>Esse foi um projeto feito com Spring boot, onde era um agendador de viagens onde tinhamos opções como chamar participantes, agendamento de eventos, confirmações</p>
+                        </div><!--habilidades-->
+                    </a>
                 </div>
 
             </div><!--interface-->
@@ -86,7 +93,7 @@
     </main>
 
     <footer>
-        <div class="interface">
+        <div id="Contato" class="interface">
             <div class="line_footer borda">
                 <div class="flex">
                     <div class="btn_social">
